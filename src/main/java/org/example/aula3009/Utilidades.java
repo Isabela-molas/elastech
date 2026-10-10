@@ -15,7 +15,7 @@ public class Utilidades {
         return (n1 + n2 / 2);
     }
     static int ehMaiorDeIdade(int idade){
-        return
+        return 0;
     }
 
 
