@@ -1,7 +1,7 @@
 package org.example.aula2909;
 
-public class Tabuada {
-    static void main() {
+public class ScannerQuatro {
+    static void main(String[] args) {
         //4 -  Crie uma variável com um número e mostre a tabuada dele de 1 a 10.
         int n = 5;
         System.out.println("Múltiplos de " + n);
