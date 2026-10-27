@@ -1,8 +1,8 @@
 package org.example.aula2909;
 import java.util.Scanner;
 
-public class AtividadeScanner {
-    static void main() {
+public class ScannerUm {
+    static void main(String[] args) {
         //1 - Peça o nome da pessoa e a idade dela. Exemplo: "Oi Ana, você tem 28 anos e vai fazer 29 no próximo aniversário."
         Scanner sc = new Scanner(System.in);
         String nome;
@@ -13,6 +13,8 @@ public class AtividadeScanner {
         System.out.println("Digite sua idade: ");
         idade = sc.nextInt();
 
-        System.out.println("Oi " + nome + " você tem " + idade + " anos e vai fazer " + (idade + 1) + " no próximo aniversário.\"");
+        System.out.println("Oi " + nome + " você tem " + idade + " anos e vai fazer " + (idade + 1) + " no próximo aniversário.");
+
+        sc.close();
     }
 }

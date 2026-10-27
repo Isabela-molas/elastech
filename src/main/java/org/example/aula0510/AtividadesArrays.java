@@ -1,9 +1,11 @@
 package org.example.aula0510;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class AtividadesArrays {
     static void main() {
+        Scanner sc = new Scanner(System.in);
         //- Crie uma lista vazia de nomes. Adicione três nomes e imprima a lista inteira.
         ArrayList<String> listaNomes = new ArrayList<>();
         listaNomes.addAll(List.of("Maria","Ana", "Luana" ));
@@ -12,6 +14,8 @@ public class AtividadesArrays {
         //- Crie uma lista já preenchida com quatro frutas. Imprima a primeira, a última e quantas frutas tem.
         ArrayList<String> frutas = new ArrayList<>(List.of("abacaxi", "melão", "abacate", "banana"));
         System.out.println(frutas.get(0));
+        System.out.println(frutas.get(3));
+        System.out.println("Há " + frutas.toArray().length + " frutas na lista.");
 
         //- Crie uma lista com quatro nomes. Troque o nome da posição 2 por outro e imprima a lista antes e depois.
         ArrayList<String> nomes = new ArrayList<>(List.of("Paula", "Geo", "Joana", "Bia"));
@@ -31,12 +35,13 @@ public class AtividadesArrays {
         }
 
         //- Crie uma lista com cinco nomes. Peça um nome à pessoa e diga se ele está na lista e em qual posição. Se não estiver, avise.
-
-
-
+        ArrayList<String> nomeQuatro = new ArrayList<>(List.of("Duda", "Flora", "Pamela", "Gabi", "Luana"));
+        System.out.println("Digite um nome: ");
+        String nome = sc.nextLine();
+        if (nomeQuatro.contains(nome)){
+            System.out.println(nome + " está na lista na posição " + nomeQuatro.indexOf(nome));
+        }else {
+            System.out.println(nome + " não está na lista");
+        }
     }
 }
-
-
-
-//ArrayList<Integer> lista = new ArrayList<>(List.of(1,2,3));
